@@ -1,16 +1,48 @@
 // Access to the jobs list
 const select = document.getElementById("jobs_list");
 
+const namesSelect = document.getElementById("names_list");
+
 // Adding a change event to the jobs list so it shows a different table fo each job, based on the specific criteria
 select.addEventListener("change", ()=>{
-    console.log(select.value);
+    // console.log(select.value);
+    namesSelect.innerHTML = '';
     if(select.value == "analista") {
+        allEmployees.forEach(employee => {
+            if(employee["RANGO"] == "ANALISTA") {
+                const option = document.createElement('option');
+                option.innerText = employee["NOMBRE"];
+                namesSelect.appendChild(option);
+            }
+        });
         createTbody(analystCriteria);
     } else if(select.value == "operario") {
+        allEmployees.forEach(employee => {
+            if(employee["RANGO"] == "OPERARIO") {
+                const option = document.createElement('option');
+                option.innerText = employee["NOMBRE"];
+                namesSelect.appendChild(option);
+            }
+        });
         createTbody(operatorCriteria);
     } else if(select.value == "coordinador"){
+        allEmployees.forEach(employee => {
+            if(employee["RANGO"] == "COORDINADOR") {
+                const option = document.createElement('option');
+                option.innerText = employee["NOMBRE"];
+                namesSelect.appendChild(option);
+            }
+        });
         createTbody(coordinatorCriteria);
     } else {
+        tbody.innerHTML = `
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        `;
         return;
     }
 });
@@ -21,9 +53,11 @@ let allScores = [];
 // Variable to store the total score of the employee
 let totalScore;
 
+// Access the tbody
+const tbody = document.getElementById("tbody");
+
 function createTbody(criteria) {
-    // Access and cleaning of the tbody
-    const tbody = document.getElementById("tbody");
+    // Cleaning the tbody
     tbody.innerHTML = '';
 
     // Cleaning of the scores array
@@ -58,13 +92,13 @@ function createTbody(criteria) {
         // Getting the index of the current element and using it to add a value to the scores' array in that specific position
         const index = criteria.indexOf(element);
         allScores.splice(index, 0, Number(scaleSelect.value));
-        console.log(allScores);
+        // console.log(allScores);
 
         // Adding a change event to the select in column 3, so it updates the value in column 4, the corresponding value in the scores' array, the total score of the employee, and the value of the total score cell
         scaleSelect.addEventListener('change', ()=>{
             col4.innerHTML = scaleSelect.value;
             allScores.splice(index, 1, Number(scaleSelect.value));
-            console.log(allScores);
+            // console.log(allScores);
 
             calculateTotalScore();
             document.getElementById('total_score_cell').innerHTML = totalScore;
@@ -108,5 +142,5 @@ function calculateTotalScore() {
         return total+score;
     });
 
-    console.log(totalScore);
+    // console.log(totalScore);
 }

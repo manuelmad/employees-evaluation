@@ -66,23 +66,23 @@ const operatorCriteria = [
         ]
     },
     {
-        "name": "MANEJO DE EQUIPOS, HERRAMIENTAS Y OCTROS ACTIVOS ASIGNADOS",
+        "name": "MANEJO DE EQUIPOS, HERRAMIENTAS Y OTROS ACTIVOS ASIGNADOS",
         "description": "Demuestra el uso racional de las herramientas que le son asignadas para la ejecución de sus labores, entiende la responsabilidad del cuidado y buen uso de las mismas.",
         "measurement scale": [
             {
-                "name": "No demuestra interés por esta competencia.",
+                "name": "Cumple por debajo de lo esperado.",
                 "points": 5
             },
             {
-                "name": "Muestra interés por estudiar y mejorar su nivel de inglés.",
+                "name": "Cumple medianamente con esta competencia.",
                 "points": 10
             },
             {
-                "name": "Es capaz de comunicarse en inglés y se interesa por la mejora continúa.",
+                "name": "Cumple satisfactoriamente con esta competencia.",
                 "points": 15
             },
             {
-                "name": "Tiene un excelente manejo del idioma inglés y lo demuestra.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 20
             }
         ]

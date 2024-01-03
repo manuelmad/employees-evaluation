@@ -1,0 +1,286 @@
+const allEmployees = [
+    {
+        "NOMBRE": "ARAUJO BELTRAN, MAYTE CAROLINA",
+        "CARGO": "GERENTE DE ADMINISTRACION",
+        "CEDULA": 16366067,
+        "INGRESO": 43437,
+        "AÑOS DE SERVICIO": 5,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "MEJIAS NUÑEZ, ZORAIDA BEATRIZ",
+        "CARGO": "COORDINADORA DE COMPRAS",
+        "CEDULA": 16832022,
+        "INGRESO": 43374,
+        "AÑOS DE SERVICIO": 5,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "ROQUEZ HERNANDEZ, ESTHER CAROLINA",
+        "CARGO": "COORDINADOR DE RECURSOS HUMANOS",
+        "CEDULA": 23745977,
+        "INGRESO": 44728,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "ESPINOZA TELLES, GABRIELA KARINA",
+        "CARGO": "COORDINADORA DE TECNOLOGIA",
+        "CEDULA": 15786761,
+        "INGRESO": 42520,
+        "AÑOS DE SERVICIO": 7,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "DE CARLO REVILLA, BELLA MARTA",
+        "CARGO": "COORDINADOR DE CONTABILIDAD",
+        "CEDULA": 17098000,
+        "INGRESO": 44816,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "NAPOLITANO BOLIVAR, JUAN JOSE",
+        "CARGO": "COORDINADOR DE SEGURIDAD",
+        "CEDULA": 4389262,
+        "INGRESO": 42436,
+        "AÑOS DE SERVICIO": 7,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "AVENDAÑO STRUVE, EXYELIN YEXSENY",
+        "CARGO": "COORDINADORA DE MANTENIMIENTO",
+        "CEDULA": 16366829,
+        "INGRESO": 40196,
+        "AÑOS DE SERVICIO": 13,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "ROMAN LEONET, MARY VIRGINIA ",
+        "CARGO": "COORDINADOR DE ADMISION Y ARCHIVO",
+        "CEDULA": 20133052,
+        "INGRESO": 44774,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "PEREIRA TORRES, ROSIBEL CECILIA",
+        "CARGO": "COORDINADOR DE SALUD",
+        "CEDULA": 23746409,
+        "INGRESO": 44774,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "COORDINADOR",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "SEGOVIA GARCIA, LADYS LAY",
+        "CARGO": "ASISTENTE ADMINISTRATIVO",
+        "CEDULA": 19072190,
+        "INGRESO": 44585,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "SOTO TORRES, LEONEL ADOLFO",
+        "CARGO": "MENSAJERO",
+        "CEDULA": 9712666,
+        "INGRESO": 39874,
+        "AÑOS DE SERVICIO": 14,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "BARBOZA MARIN, DANILO ARISTIDES",
+        "CARGO": "ASISTENTE ADMINISTRATIVO",
+        "CEDULA": 7973220,
+        "INGRESO": 36739,
+        "AÑOS DE SERVICIO": 23,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "COMPRAS"
+    },
+    {
+        "NOMBRE": "FLORES PARRA, CATHERINE PAOLA",
+        "CARGO": "ASISTENTE ADMINISTRATIVO",
+        "CEDULA": 25540895,
+        "INGRESO": 43132,
+        "AÑOS DE SERVICIO": 5,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "COMPRAS"
+    },
+    {
+        "NOMBRE": "LUZARDO OLIVARES, JORGE LUIS",
+        "CARGO": "ASISTENTE ADMINISTRATIVO",
+        "CEDULA": 14236719,
+        "INGRESO": 43374,
+        "AÑOS DE SERVICIO": 5,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "COMPRAS"
+    },
+    {
+        "NOMBRE": "PRINCIPAL GARCIA, RUTH ELENA",
+        "CARGO": "ANALISTA DE RRHH ",
+        "CEDULA": 24893641,
+        "INGRESO": 45054,
+        "AÑOS DE SERVICIO": 0,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "RECURSOS HUMANOS"
+    },
+    {
+        "NOMBRE": "HERNANDEZ BALLESTEROS, GABRIELA ISABEL",
+        "CARGO": "ASISTENTE DEL SUPERINTENDENTE",
+        "CEDULA": 27558085,
+        "INGRESO": 44859,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "RECURSOS HUMANOS"
+    },
+    {
+        "NOMBRE": "CRIOLLO AVILA, GERARDO JOSUE",
+        "CARGO": "ANALISTA DE TECNOLOGIA",
+        "CEDULA": 13829255,
+        "INGRESO": 44473,
+        "AÑOS DE SERVICIO": 2,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "TECNOLOGIA"
+    },
+    {
+        "NOMBRE": "CHACON VELAZCO, ALEJANDRO",
+        "CARGO": "ANALISTA DE TECNOLOGIA",
+        "CEDULA": 10688594,
+        "INGRESO": 44844,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "TECNOLOGIA"
+    },
+    {
+        "NOMBRE": "BRICEÑO VALE, BARBARA MARIA",
+        "CARGO": "ANALISTA DE COBRANZA",
+        "CEDULA": 18064195,
+        "INGRESO": 43346,
+        "AÑOS DE SERVICIO": 5,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "CONTABILIDAD"
+    },
+    {
+        "NOMBRE": "GALBAN RODRIGUEZ, MARIANELA DEL CARMEN",
+        "CARGO": "ASISTENTE CONTABLE",
+        "CEDULA": 13242928,
+        "INGRESO": 42621,
+        "AÑOS DE SERVICIO": 7,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "CONTABILIDAD"
+    },
+    {
+        "NOMBRE": "PAREDES PALOMINO, CARLOS JAVIER",
+        "CARGO": "ANALISTA DE PRESUPUESTO",
+        "CEDULA": 13975542,
+        "INGRESO": 44634,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "CONTABILIDAD"
+    },
+    {
+        "NOMBRE": "ARELLANO GOMEZ, JUAN  DIEGO",
+        "CARGO": "ANALISTA CONTABLE",
+        "CEDULA": 24253318,
+        "INGRESO": 44888,
+        "AÑOS DE SERVICIO": 1,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "CONTABILIDAD"
+    },
+    {
+        "NOMBRE": "AMUTIO MATUTE, ANDREA PAOLA",
+        "CARGO": "ANALISTA DE MANTENIMIENTO",
+        "CEDULA": 25790909,
+        "INGRESO": 44473,
+        "AÑOS DE SERVICIO": 2,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "MANTENIMIENTO"
+    },
+    {
+        "NOMBRE": "IRIARTE CUBILLAN, ANDREA BEATRIZ",
+        "CARGO": "INSPECTOR DE MANTENIMIENTO",
+        "CEDULA": 16459824,
+        "INGRESO": 43161,
+        "AÑOS DE SERVICIO": 5,
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "MANTENIMIENTO"
+    },
+    {
+        "NOMBRE": "BRACHO FARIA, ENMANUEL DAVID",
+        "RANGO": "ANALISTA",
+        "DEPARTAMENTO": "MANTENIMIENTO"
+    },
+    {
+        "NOMBRE": "SOTO TORRES, LEONEL ADOLFO",
+        "CARGO": "MENSAJERO",
+        "CEDULA": 9712666,
+        "INGRESO": 39874,
+        "AÑOS DE SERVICIO": 14,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "ADMINISTRACION"
+    },
+    {
+        "NOMBRE": "AGUIRRECHE MOLERO, ALIRIO ANTONIO",
+        "CARGO": "OFICIAL DE SEGURIDAD",
+        "CEDULA": 7861152,
+        "INGRESO": 43046,
+        "AÑOS DE SERVICIO": 6,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "SEGURIDAD"
+    },
+    {
+        "NOMBRE": "ALMARZA VILCHEZ, EMMANUEL SALVADOR",
+        "CARGO": "OFICIAL DE SEGURIDAD",
+        "CEDULA": 14822303,
+        "INGRESO": 42381,
+        "AÑOS DE SERVICIO": 7,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "SEGURIDAD"
+    },
+    {
+        "NOMBRE": "BARBOZA MARIN, WILLY ENRIQUE",
+        "CARGO": "OFICIAL DE SEGURIDAD",
+        "CEDULA": 4530771,
+        "INGRESO": 39983,
+        "AÑOS DE SERVICIO": 14,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "SEGURIDAD"
+    },
+    {
+        "NOMBRE": "BARRETO, RUBEN SEGUNDO",
+        "CARGO": "OFICIAL DE SEGURIDAD",
+        "CEDULA": 9775422,
+        "INGRESO": 34834,
+        "AÑOS DE SERVICIO": 28,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "SEGURIDAD"
+    },
+    {
+        "NOMBRE": "DIAZ RAMIREZ, JOSE LUIS",
+        "CARGO": "AYUDANTE DE MANTENIMIENTO",
+        "CEDULA": 9776563,
+        "INGRESO": 36739,
+        "AÑOS DE SERVICIO": 23,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "MANTENIMIENTO"
+    },
+    {
+        "NOMBRE": "NUÑEZ LUENGO, GLEEN JOSE",
+        "CARGO": "AYUDANTE DE MANTENIMIENTO",
+        "CEDULA": 12217948,
+        "INGRESO": 34744,
+        "AÑOS DE SERVICIO": 28,
+        "RANGO": "OPERARIO",
+        "DEPARTAMENTO": "MANTENIMIENTO"
+    }
+]
