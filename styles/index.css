@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+:root {
+    --small-font: 1.2rem;
+    --mediun-font: 1.6rem;
+    --large-font: 2rem;
+}
+
+main {
+    font-size: var(--mediun-font);
+}
+
+#table {
+    margin: 0 auto;
+    border: 0.1rem solid black;
+    border-collapse: collapse;
+}
+
+#table td,#table th {
+    border: 0.1rem solid black;
+}
+
+.joblist-container {
+    text-align: center;
+    margin-bottom: 4rem;
+}
