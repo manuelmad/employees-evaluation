@@ -16,7 +16,7 @@ const coordinatorCriteria = [
                 "points": 15
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 20
             }
         ]
@@ -38,7 +38,7 @@ const coordinatorCriteria = [
                 "points": 20
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 25
             }
         ]
@@ -60,7 +60,7 @@ const coordinatorCriteria = [
                 "points": 20
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 25
             }
         ]
@@ -82,7 +82,7 @@ const coordinatorCriteria = [
                 "points": 15
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 20
             }
         ]
@@ -92,7 +92,7 @@ const coordinatorCriteria = [
         "description": "Demuestra interés por alcanzar un buen dominio del idioma inglés en aras de cumplir con expectativas y necesidades de comunicación de la comunidad como medio para brindar soporte a clientes internos y externos dentro de la institución. Se preocupa por mejorar continuamente sus habilidades en el idioma inglés.",
         "measurement scale": [
             {
-                "name": "No demuestra iterés por esta competencia.",
+                "name": "No demuestra interés por esta competencia.",
                 "points": 0
             },
             {

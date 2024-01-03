@@ -16,7 +16,7 @@ const operatorCriteria = [
                 "points": 15
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 20
             }
         ]
@@ -38,7 +38,7 @@ const operatorCriteria = [
                 "points": 25
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 30
             }
         ]
@@ -60,7 +60,7 @@ const operatorCriteria = [
                 "points": 25
             },
             {
-                "name": "Excede las espectativas relacionadas a esta competencia.",
+                "name": "Excede las expectativas relacionadas a esta competencia.",
                 "points": 30
             }
         ]
@@ -70,7 +70,7 @@ const operatorCriteria = [
         "description": "Demuestra el uso racional de las herramientas que le son asignadas para la ejecución de sus labores, entiende la responsabilidad del cuidado y buen uso de las mismas.",
         "measurement scale": [
             {
-                "name": "No demuestra iterés por esta competencia.",
+                "name": "No demuestra interés por esta competencia.",
                 "points": 5
             },
             {

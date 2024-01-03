@@ -6,28 +6,122 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
+
 :root {
     --small-font: 1.2rem;
-    --mediun-font: 1.6rem;
+    --medium-font: 1.6rem;
     --large-font: 2rem;
+    --very-large-font: 2.4rem;
+
+    --ebv-yellow: #ffd500;
+    --ebv-blue: #004f82;
+    --white: #ffffff;
+}
+
+header {
+    width: 100%;
+    height: 12rem;
+    text-align: center;
+}
+
+header img {
+    width: 30rem;
+    height: auto;
 }
 
 main {
-    font-size: var(--mediun-font);
+    width: 100%;
+    font-size: var(--medium-font);
+    padding: 4rem 0;
 }
 
-#table {
-    margin: 0 auto;
-    border: 0.1rem solid black;
-    border-collapse: collapse;
-}
-
-#table td,#table th {
-    border: 0.1rem solid black;
+h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: var(--very-large-font);
 }
 
 .joblist-container {
     text-align: center;
     margin-bottom: 4rem;
+}
+
+#jobs_list {
+    width: 30rem;
+    height: 4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: var(--medium-font);
+}
+
+#table {
+    margin: 0 auto;
+    /* border: 0.1rem solid black; */
+    border-collapse: collapse;
+}
+
+#table thead {
+    height: 5rem;
+}
+
+#table td {
+    padding: 1rem;
+}
+
+#table thead {
+    background-color: var(--ebv-yellow);
+    color: var(--ebv-blue);
+    font-weight: bold;
+    font-size: var(--large-font);
+}
+
+#table thead tr th:first-child {
+    width: 30rem;
+}
+
+#table thead tr th:nth-child(2) {
+    width: 50rem;
+}
+
+#table thead tr th:nth-child(3) {
+    width: 20rem;
+}
+
+#table thead tr th:nth-child(4) {
+    width: 10rem;
+}
+
+#table tbody tr td:first-child, #table tbody tr td:nth-child(4) {
+    font-weight: bold;
+}
+
+#table tbody tr td:nth-child(3), #table tbody tr td:nth-child(4) {
+    text-align: center;
+}
+
+#table .long-cell {
+    border-left: var(--white);
+    border-bottom: var(--white);
+    text-align: end;
+}
+
+#total_score_cell {
+    text-align: center;
+    background-color: var(--ebv-blue);
+    color: var(--ebv-yellow);
+    font-weight: bold;
+    font-size: var(--large-font);
+}
+
+#table td, #table th {
+    border: 0.1rem solid black;
+}
+
+#table select {
+    width: 18rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: var(--medium-font);
 }
